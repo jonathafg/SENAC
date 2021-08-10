@@ -1,0 +1,11 @@
+Grupo: Jonatha Garcia, Samael Pitrofski, Fabricio Back, Thais Brasil.
+
+Software :
+-É um conjunto de dados/informações ou instruções para  executar determinada tarefa/finalidade
+
+-Software é conjunto de informações logicas para solução de algum problema ou para fim funcional.
+
+-Após lermos o capitulo no livro, entramos em um acordo, que basicamente a forma que descrevemos apesar de ser um tanto técnica e simples, acaba sendo o que melhor define um "software"
+
+-
+ 

@@ -1,0 +1,73 @@
+create or replace function fn_GeraMultas(pCNH char(5), pVelApurada DECIMAL(5,2))
+
+returns varchar(50) as
+
+$$ declare
+
+
+_velocidade DECIMAL(5,2);
+_velCalculada integer := 0;
+_multa DECIMAL(3);
+_pontos DECIMAL(2);
+_nome varchar;
+_msg varchar;
+_novoNome varchar;
+_novoPontos integer := 0;
+-- Coloque aqui as variáveis
+
+ 
+
+begin -- Escreva aqui
+-- 1º o cálculo da velocidade calculada
+_velCalculada = pVelApurada * 0.9;
+
+
+-- 2º teste os intervalos para ver se o motorista tem multa e se tiver --    insere na tabela ex_multa
+
+if _velCalculada >= (80.01) and _velCalculada <= (110) THEN
+
+	insert into ex_multa (cnh,velocidadeApurada,velocidadeCalculada,pontos,valor)
+	values(pCNH,pVelApurada, _velCalculada,20,120);
+	
+end if;
+
+if _velCalculada >= (110.01) and _velCalculada <= (140) THEN
+
+	insert into ex_multa (cnh,velocidadeApurada,velocidadeCalculada,pontos,valor)
+	values(pCNH,pVelApurada, _velCalculada,40,350);
+	
+end if;
+
+if _velCalculada  >= (140) THEN
+
+	insert into ex_multa (cnh,velocidadeApurada,velocidadeCalculada,pontos,valor)
+	values(pCNH,pVelApurada, _velCalculada,60,680);
+	
+end if;
+
+-- 3º busque o nome do motorista –
+--create temp table _novoNome AS
+--select nome from ex_motorista where cnh = pCNH;
+--_nome = _novoNome;
+
+
+
+
+-- 4º some o total de pontos do motorista
+create temp table _novoPontos AS 
+select SUM(pontos) from ex_multa where cnh = pCNH;
+insert into ex_motorista (totalmultas)
+values(_novoPontos);
+
+-- 5º retorne a mensagem 
+_msg = 'O motorista: $ soma $ pontos em multas';
+return _msg;
+end;
+
+
+$$ language plpgsql;
+
+
+--select * from ex_motorista
+select pontos from ex_multa
+select * from fn_GeraMultas('123AB', 100)

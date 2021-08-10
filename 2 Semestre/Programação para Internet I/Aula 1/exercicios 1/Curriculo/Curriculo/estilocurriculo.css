@@ -1,0 +1,17 @@
+table {
+}
+
+h2 {
+    background-color: #6ECC96;
+}
+
+h1 {
+    background-color: #9160B3;
+}
+
+body {
+    background-color: #FFCA6E;
+    background-repeat: repeat-y;
+    background-position: right;
+    background-attachment: fixed;
+}

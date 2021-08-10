@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Usuários</title>
+        <script src="javaScript.js"></script>
+    </head>
+    <body>
+        <h1 id="topo"> Cadastro de Novos  </h1> <br/>
+
+        <form id="cadastro"  action="recebeDados.html">
+        
+            <h2 id="topo"> Dados Pessoais </h2> <br/>
+
+            <p class="nome">
+                Nome Completo: <input type="text"   id="nome" required="required" > <br/>
+            </p>
+
+            <p class="endereço">
+                Endereço: <input type="text"   id="endereco" required="required"> <br/>
+            </p>
+
+            <p class=cidade>
+                Cidade: </label><input type="text"   id="cidade"  required="required"> <br/>
+            </p>
+
+            <p class="estado">
+                Estado:
+                <select name="estado" id="estado" required="required">
+                    <option value="">Selecione...</option>
+                    <option value="A">São Paulo</option>
+                    <option value="B">Rio Grande do Sul</option>
+                    <option value="C">Rio Grande do Norte</option>
+                    <option value="D">Rio de Janeiro</option>
+                    <option value="E">Santa Catarina</option>
+                    <option value="F">Parana</option>
+                    <option value="G">Mato Grosso</option>
+                    <option value="H">Minas Gerais</option>
+                    <option value="I">Amazonas</option>
+                    <option value="J">Acre</option>
+                </select>
+            </p>
+
+            <br><br>
+
+            <h2 id="topo"> Dados do Sistema </h2> <br/> 
+            
+            <p class="usuario">
+                Nome Usuário:<input type="text"   id="usuario"  required="required"> <br/>
+            </p>
+
+            <p class="senha">
+                Senha: <input type="text"   id="senha" required="required"> <br/>
+            </p>
+
+            <p class="conf senha">
+                Confirme Senha: <input type="text" id="confSenha"    required="required"> <br/>
+            </p>
+
+            <p class="submit">
+                <input type="submit" value="save" >
+            </p>
+        </form>
+    </body>
+</html>	
+
+            
+
+
+
+            
+
+             
