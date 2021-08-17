@@ -1,12 +1,12 @@
 #Criando Classe
-class MinhaClasse:
-    x = 5
+#class MinhaClasse:
+    #x = 5
 
-print(MinhaClasse)
+#print(MinhaClasse)
 
 #Criando um Objeto
-p1 = MinhaClasse()
-print(p1.x)
+#p1 = MinhaClasse()
+#print(p1.x)
 
 #Metodo construtor da classe
 class Pessoa:
