@@ -1,0 +1,4 @@
+cd - leva uma pasta pra frete
+ls - leva uma pasta pra tras
+
+node [nome do arquivo].js - executa o arquivo
