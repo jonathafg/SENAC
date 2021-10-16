@@ -34,12 +34,9 @@ class Computador(metaclass = ABCMeta):
 
 
     def getInformacoes(self):
-        return self.modelo, self.cor, self.modelo
+        return self.modelo, self.cor, self.preco
 
 
     @abstractmethod
     def cadastrar(self):
         pass
-
-
-
