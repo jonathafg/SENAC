@@ -1,0 +1,28 @@
+usuario ubuntu: jonatha
+senha ubuntu: 123456
+ip ubuntu: 192.168.0.129
+
+descobrir o ip do ubuntu
+ifconfig
+
+entrar no ubuntu via cmd windows
+ssh [usuario ubuntu]@[ip ubuntu]
+
+entrar no python
+python3
+
+sair do python
+exit()
+
+
+criar pasta via terminal
+mkdir [nome da pasta]
+
+ver diretorios via terminal
+ls
+
+entrar em uma pasta via terminal
+cd [nome da pasta]
+
+abrir um arquivo py no nano via terminal
+nano [nome do arquivo].py

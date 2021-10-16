@@ -2,3 +2,12 @@ cd - leva uma pasta pra frete
 ls - leva uma pasta pra tras
 
 node [nome do arquivo].js - executa o arquivo
+
+
+mkdir (nome da pasta) - cria uma pasta
+npm init -y   - cria o projeto NODE
+trocar dentro do package.json o main e script para start: node app.js
+npm install express
+npm install
+
+crtl + c para o server
