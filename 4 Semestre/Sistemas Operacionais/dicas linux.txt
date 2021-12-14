@@ -26,3 +26,19 @@ cd [nome da pasta]
 
 abrir um arquivo py no nano via terminal
 nano [nome do arquivo].py
+
+Transformar arquivo de texto em executavel
+chmod 777 [nome arquivo]
+
+executar arquivo
+./[nome do arquivo]
+
+copiar arquivo no diretorio
+cp [nome arquivo a ser copiado] [nome da copia]
+
+listar arquivo de texto
+cat [nome do arquivo]
+
+enviar conteudo para dentro de uma lista
+cat [nome do arquivo] [nome de um segundo arquivo se quiser] >> [nome do novo arquivo]
+exemplo: cat t01.txt t02.txt >> lista_cat
